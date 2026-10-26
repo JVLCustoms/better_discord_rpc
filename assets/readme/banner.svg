@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Better Discord RPC — Discord Rich Presence with live activity for FiveM">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05080d"/>
+      <stop offset="1" stop-color="#0d1124"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.74" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5865f2" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#5865f2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="topline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.02" stop-color="#1e2350" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#5865f2"/>
+      <stop offset="0.45" stop-color="#e2ecf7"/>
+      <stop offset="0.6" stop-color="#2f8cf0"/>
+      <stop offset="0.95" stop-color="#2f8cf0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="logo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f8cf0"/><stop offset="1" stop-color="#5865f2"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="1200" height="340" rx="24"/></clipPath>
+    <style>
+      .t { font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .l1, .l2, .l3 { opacity: 0; animation: rota 9s infinite; }
+      .l2 { animation-delay: 3s; }
+      .l3 { animation-delay: 6s; }
+      @keyframes rota { 0% { opacity: 0; } 4% { opacity: 1; } 30% { opacity: 1; } 34% { opacity: 0; } 100% { opacity: 0; } }
+      .dot { animation: pulso 2s ease-in-out infinite; }
+      @keyframes pulso { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#glow)"/>
+    <rect x="0" y="0" width="1200" height="2" fill="url(#topline)"/>
+    <rect x="0" y="338" width="1200" height="2" fill="url(#topline)" opacity="0.5"/>
+
+    <!-- title -->
+    <g class="t">
+      <text x="64" y="104" fill="#8ea2c0" font-size="15" font-weight="700" letter-spacing="4">JVL CUSTOMS · FREE</text>
+      <text x="62" y="160" fill="#e2ecf7" font-size="52" font-weight="800">Better Discord RPC</text>
+      <text x="64" y="198" fill="#9fb3cf" font-size="19">Your server in every player's Discord profile,</text>
+      <text x="64" y="224" fill="#9fb3cf" font-size="19">with what they are doing right now.</text>
+      <g font-size="14" font-weight="700">
+        <rect x="64" y="252" width="96" height="30" rx="8" fill="#0f1a2c" stroke="#2f8cf0" stroke-width="2"/>
+        <text x="112" y="272" fill="#e2ecf7" text-anchor="middle">Qbox · QB</text>
+        <rect x="170" y="252" width="62" height="30" rx="8" fill="#0f1a2c" stroke="#2f8cf0" stroke-width="2"/>
+        <text x="201" y="272" fill="#e2ecf7" text-anchor="middle">ESX</text>
+        <rect x="242" y="252" width="112" height="30" rx="8" fill="#0f1a2c" stroke="#2f8cf0" stroke-width="2"/>
+        <text x="298" y="272" fill="#e2ecf7" text-anchor="middle">Standalone</text>
+        <rect x="364" y="252" width="62" height="30" rx="8" fill="#0f1a2c" stroke="#22c55e" stroke-width="2"/>
+        <text x="395" y="272" fill="#86efac" text-anchor="middle">MIT</text>
+      </g>
+    </g>
+
+    <!-- Discord activity card -->
+    <g transform="translate(700 52)">
+      <rect width="440" height="236" rx="14" fill="#1e1f22" stroke="#5865f2" stroke-width="2"/>
+      <g class="t">
+        <text x="24" y="38" fill="#b5bac1" font-size="13" font-weight="800" letter-spacing="1">PLAYING</text>
+        <rect x="24" y="56" width="92" height="92" rx="12" fill="url(#logo)"/>
+        <text x="70" y="113" fill="#ffffff" font-size="30" font-weight="900" text-anchor="middle">RP</text>
+        <circle cx="110" cy="142" r="13" fill="#1e1f22"/>
+        <circle class="dot" cx="110" cy="142" r="9" fill="#22c55e"/>
+        <text x="134" y="78" fill="#f2f3f5" font-size="19" font-weight="700">Your Server RP</text>
+        <g font-size="15" fill="#dbdee1">
+          <text class="l1" x="134" y="106">Driving on Vinewood Blvd, Vinewood</text>
+          <text class="l2" x="134" y="106">Juan Pérez · ID 12</text>
+          <text class="l3" x="134" y="106">48/64 players</text>
+        </g>
+        <text x="134" y="132" fill="#23a55a" font-size="14" font-weight="700">00:42:17 elapsed</text>
+        <rect x="24" y="166" width="194" height="44" rx="8" fill="#4e5058"/>
+        <text x="121" y="194" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">Join server</text>
+        <rect x="222" y="166" width="194" height="44" rx="8" fill="#4e5058"/>
+        <text x="319" y="194" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">Discord</text>
+      </g>
+    </g>
+  </g>
+</svg>
